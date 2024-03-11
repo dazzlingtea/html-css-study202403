@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .orange + li {
+      color: orangered;
+    }
+
+    /* 첫번째 tr 빼고 전부 */
+    tr + tr {
+
+    }
+    /* li : 첫번째 li는 형이 없어서 제외 */
+    li + li {
+      font-style: italic;
+      list-style: none;
+      font-weight: 700;
+      border: 1px solid black;
+    }
+
+    .red ~ li {
+      background: yellow;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+  <ul>
+    <li class="orange">어륀지</li>
+    <li>사과</li>
+    <li>딸기</li>
+    <li class="orange">오렌지</li>
+    <li class="red">자몽</li>
+    <li>포도</li>
+    <li>레몬</li>
+  </ul>
+
+
+</body>
+</html>
