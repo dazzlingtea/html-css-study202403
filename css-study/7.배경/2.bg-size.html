@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .box {
+      /* 사진 액자 400 X 300 -> 4:3 */
+      width: 400px;
+      height: 300px;
+      border: 2px solid pink;
+      margin: 50px auto;
+
+      /* 사진 사이즈 600 X 385 -> 3:2  */
+      /* 액자 가로   400 X 260 */
+      /* 액자 세로   450 X 300 */
+      background-image: url('../../img/tulip.jpg');
+      background-repeat: no-repeat;
+      /* background-size: 470px; */
+      /* background-size: contain; 가로 */
+      background-size: cover; /* 세로 */
+      background-position: -10px 0;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="box"></div>
+
+</body>
+</html>

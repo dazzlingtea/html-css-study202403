@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .outer-container {
+      width: 650px;
+      margin: 50px auto;
+      border: 3px double gray;
+      background: lightgray;
+      font-size: 15px;
+      font-family: "맑은고딕";
+      text-align: center;
+      line-height: 1.2;
+    }
+    .outer-container .title {
+      padding: 20px;
+      font-size: 2em;
+      font-weight: 700;
+      font-family: "궁서체", cursive;
+    }
+    .outer-container .subtitle {
+      padding: 10px;
+      background-color: black;
+      color: white;
+      /* font-size: 1.2em; */
+    }
+    .outer-container .subtitle span {
+      color: yellow;
+    }
+    .outer-container .container {
+      background-color: rgb(112, 112, 112);
+      
+    }
+    .outer-container .container .box {
+      width: 23.75%;
+      height: 250px;
+      margin: 20px 0;
+      padding: 130px 0 20px;
+      margin-right: 1%;
+      float: left;
+      border: 1px solid rgba(255, 255, 255, 0.699);
+      background: no-repeat center 5px / 94% 45%;
+    }
+    .outer-container .container .box1 {
+      margin-left: 1%; 
+      background-color: red;
+      background-image: url(../../../img/tulip.jpg);
+    }
+    
+    .outer-container .container .box2 {
+      background-color: violet;
+      background-image: url(../../../img/jebi.jpg);
+    }
+    .outer-container .container .box3 {
+      background-color: orange;
+      background-image: url(../../../img/hobak.jpg);
+    }
+    .outer-container .container .box4 {
+      background-color: yellow;
+      background-image: url(../../../img/sunflower.jpg);
+    }
+    .outer-container .container .box p {
+      padding: 0 7px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <section class="outer-container">
+    <h1 class="title">나의 아름다운 정원</h1>
+    <h2 class="subtitle">사람들은 아마 자신에게 <span>자신감을 북돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>
+    <div class="container  clearfix">
+      <div class="box box1">
+        
+        <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+          붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</p>
+      </div>
+      <div class="box box2">
+        
+        <p>드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+          어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.</p>
+      </div>
+      <div class="box box3">
+        
+        <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+          매우 완숙한 이미지를 풍기는 꽃이다.</p>
+      </div>
+      <div class="box box4">
+        
+        <p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+          속하며 송이가 적어야 제격이다.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

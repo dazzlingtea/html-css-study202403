@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .container {
+      width: 70%;
+      margin: 50px auto;
+      padding: 20px 0 10px;
+      font-size: 18px;
+      border: 3px solid rosybrown;
+      background: rgb(255, 225, 225);
+    }
+    .container h1 {
+      font-size: 1.5em;
+      font-weight: 700;
+      text-align: center;
+    }
+    .container .contents {
+      padding: 10px;
+    }
+    .container .contents .box {
+      width: 40%;
+      padding: 5px 0;
+      float: left;
+      background: center / 200px 200px;
+      text-align: justify;
+    }
+    .container .contents .box:first-child {
+      margin-left: 3%;
+      margin-right: 14%;
+    }
+    .container .contents .box:last-child {
+      margin-right: 3%;
+    }
+    .container .contents .box p {
+      padding: 10px;
+    }
+    .container .contents .box #tea {
+      background-color: rgb(216, 216, 152);
+    }
+    .container .contents .box #coffee {
+      background-color: rgb(192, 180, 115);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>녹차와 커피</h1>
+    <div class="contents clearfix">
+      <div class="box">
+        <p id="tea">녹차는 은은한 향을 좋아하는 사람들이 애용하는 차이다. 녹차를 마실 줄 모르는 사람들은
+          티백들을 모두 뜯어 주전자에 넣고 끊이기도 하는데 강한 차의 향기도 견디기 힘들겠지만
+          보관도 힘들고 그때그때 방금 끓인 듯한 맛을 느끼지 못하게 되며 진한 카페인 덕에 밤에
+          잠들기도 힘들 것이다.</p>
+      </div>
+      <div class="box">
+        <p id="coffee">커피는 독한 향을 좋아하는 사람도 매우 좋아하며 심한 경우 태어나기 전부터 커피를 마신
+          듯 강한 중독 증세를 보이는 경우가 많다. 심지어 원두를 씹어서 향에 자신을 담그는 사람도
+          있고 설탕, 시럽 등 다른 조미를 절대로 허락하지 않는 오직 커피맛만을 고집하는 마니아들
+          이 늘고 있다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
