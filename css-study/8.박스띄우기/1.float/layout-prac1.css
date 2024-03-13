@@ -1,0 +1,40 @@
+
+@import url('../../common.css');
+
+.container {
+  width: 70%;
+  background: rgb(252, 229, 233);
+  border: 5px solid #ccaaaa;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 두 div 수직 -> 수평 */
+.container .contents div {
+  /* border: 1px solid #000; */
+  /* 수평 걸리긴 했지만 적용 안되는 이유는 자리가 없어서 */
+  float: left; 
+  width: 45%;
+}
+
+.container .contents div p {
+  padding: 15px;
+  text-align: justify;
+  line-height: 1.3;
+  text-indent: 7px;
+}
+
+.container .contents .green {
+  background: #dda;
+  margin-right: 10%;
+}
+.container .contents .coffee {
+  background: #ba7;
+}
