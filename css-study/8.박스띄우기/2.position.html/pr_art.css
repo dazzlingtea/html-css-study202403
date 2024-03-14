@@ -1,0 +1,139 @@
+
+@import url(../../common.css);
+
+body {
+  background: rgb(173, 173, 173);
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'NGothic', sans-serif;
+}
+/* begin header style */
+#wrapper header {
+  width: 100%;
+  background: rgb(255, 179, 38);
+  text-align: center;
+}
+#wrapper header h1 {
+  color: #fff;
+  font-size: 3.3em;
+  font-weight: 700;
+  padding: 10px;
+  line-height: 1.3;
+}
+#wrapper header h1 span {
+  display: block;
+  font-size: 0.2em;
+}
+#wrapper header h2 {
+  background: rgb(207, 207, 207);
+  font-size: 0.2em;
+  line-height: 1.5;
+}
+/* end header style */
+
+/* begin container style */
+#wrapper .container { 
+  width: 100%;
+  background: #fff;
+}
+
+#wrapper .container .side-menu {
+  width: 25%;
+  float: left;
+}
+.container .side-menu h3 {
+  background: rgb(133, 18, 18);
+  color: #fff;
+  line-height: 1.5;
+  padding: 5px;
+}
+.container .side-menu a {
+  line-height: 1.5;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+#wrapper .container .main-content {
+  
+  background: #e4e1dd;
+  width: 50%;
+  float: left;
+}
+
+.container .main-content .art-piece {
+  padding: 10px 5px;
+  color: #123456;
+}
+.container .main-content .art-piece .title {
+  background: #123456;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 1em;
+  padding: 5px;
+}
+.container .main-content .art-piece .artist {
+  padding: 10px 0 0;
+}
+.container .main-content .art-piece .detail {
+  font-size: 0.8em;
+  padding: 10px 0 0;
+}
+
+#wrapper .container aside.banner {
+  /* background: yellow; */
+  width: 25%;
+  float: left;
+  padding: 0 5px;
+}
+.container aside.banner h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+.container aside.banner h3 .all {
+  display: block;
+  color: #bbb;
+  text-decoration: underline;
+}
+.container aside.banner h3 .love {
+  display: block;
+  color: orange;
+  text-decoration: underline;
+}
+.container aside.banner .link {
+  padding-top: 10px;
+}
+.container aside.banner li {
+  font-size: 0.8em;
+  line-height: 1.2;
+}
+.container aside.banner li a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.container aside.banner li span {
+  display: block;
+}
+
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  font-size: 1.1em;
+}
+
+/* end container */
+
+footer {
+  background: #123456;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.5;
+  padding: 5px;
+}
