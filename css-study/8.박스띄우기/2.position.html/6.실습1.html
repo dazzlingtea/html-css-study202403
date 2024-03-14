@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 60%;
+        border: 3px solid lightgray;
+        background: pink;
+        margin: 50px auto;
+      }
+      .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      header {
+        padding: 20px;
+      }
+      header h1 {
+        color: green;
+        margin: 0;
+        padding: 0;
+        font-size: 2.5em;
+        float: left;
+      }
+      header .viewmore {
+        font-size: 1.8em;
+        float: right;
+      }
+      section ul {
+        list-style: none;
+        color: gray;
+        font-size: 1.8em;
+        display: block;
+        margin: 0 20px 30px;
+      }
+      section ul li {}
+    </style>
+  </head>
+  <body>
+    <section>
+      <header class="clearfix">
+        <h1>동물병원 24시</h1>
+        <div class="viewmore"><a href="#">더보기</a></div>
+      </header>
+      <ul>
+        <li>밥 먹이는 시간 지킬 것</li>
+        <li>길고양이 주사 맞히기</li>
+        <li><a href="#">눈 아픈 동물 목에 깔때기 씌우기</a></li>
+        <li>매일 목욕 시킬 것</li>
+        <li>이름없는 애들 이름 짓지 말기</li>
+      </ul>
+    </section>
+  </body>
+</html>

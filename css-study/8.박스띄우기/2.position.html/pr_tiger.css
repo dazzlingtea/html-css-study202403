@@ -1,0 +1,103 @@
+
+@import url('../../common.css');
+
+html {
+  background: #555;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 50px auto;
+}
+
+#wrapper header {
+  width: 70%;
+  height: 90px;
+  line-height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background: #123456;
+  text-align: center;
+}
+#wrapper header h1  {
+  color: rgb(221, 221, 8);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+#wrapper header h1 strong {
+  color: #fff;
+  font-size: 2em;
+}
+#wrapper header h1 span {
+  font-size: 1.7rem;
+}
+#wrapper header h1 em {
+  color: lightgrey;
+  font-size: 1.8em;
+}
+#wrapper .container {
+  background: rgb(255, 255, 255);
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+#wrapper .container .menu {
+  width: 20%;
+  height: 100%;
+  background: #ccc;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+#wrapper .container .menu li {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 0.8em;
+  line-height: 30px;
+}
+
+#wrapper .container .menu li a {
+  text-decoration: underline;
+}
+
+#wrapper .container .content {
+  background: #fff;
+  width: 80%;
+  height: 100%;
+  float: right;
+}
+
+#wrapper .container .content h2 {
+  height: 40px;
+  background: rgb(151, 32, 32);
+  color: rgb(240, 218, 27);
+  font-size: 1.3em;
+  font-weight: 700;
+  font-family: '궁서체', cursive;
+  padding: 10px;
+}
+#wrapper .container .content p {
+  padding: 30px 20px;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#wrapper footer {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  background: rgb(148, 148, 148);
+  position: relative;
+  bottom: -40px;
+  z-index: 1;
+}
